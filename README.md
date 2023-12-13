@@ -11,7 +11,11 @@ Dann mit seinen Azure Daten anmelden.
 
 ```az aks get-credentials -g <IhrName> -n <IhrName>```
 
-Anschließend können die Files gedownloadet werden. Wenn dies getan wurde muss mit dem Befehl ```cd Ihr\Pfad``` in den Ordner mit den Dateien navigiert werden.
+Anschließend können die Files gedownloadet werden.
+
+Jetzt müssen die hostPaths in den Files "wordpress-pv-pvc.yaml" & "mysql-pv-pvc.yaml" angepasst werden.
+
+Wenn dies getan wurde muss mit dem Befehl ```cd Ihr\Pfad``` in den Ordner mit den Dateien navigiert werden.
 Nun müssen nacheinander folgende Befehle ausgeführt werden:
 
 ```kubectl apply -f mysql-secret.yaml```
