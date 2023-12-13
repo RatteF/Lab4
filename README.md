@@ -30,6 +30,7 @@ Jetzt sollte mit dem Befehl ```kubectl get svc wordpress-service``` nachgeschaut
 Sobald eine IP angezeigt wird, kann der Link http://"IhreExternalIP":30007 in einem Browserfenster eingegeben werden und es erscheint die Wordpress Seite.
 
 Folgend weitere Bilder:
+
 Cluster Status mit der URL: https://portal.azure.com/#@fhwn.ac.at/resource/subscriptions/f27379d5-931b-49b4-a4a8-a7490d71fc75/resourceGroups/grasnick23/providers/Microsoft.ContainerService/managedClusters/grasnick23/overview
 ![cluster status neu erstellt](https://github.com/RatteF/Lab4/assets/83348757/8fc500e0-c5c9-47bc-a649-b0e232be7a45)
 Laufendes Cluster
