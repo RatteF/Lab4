@@ -1,6 +1,6 @@
 # Lab4
 
-##Implementierung
+## Implementierung
 
 Zunächst muss ein Azure Kubernetes-Cluster erstellt werden. Dafür müssen im Terminal folgende Befehle eingegeben werden:
 ```az login```
@@ -36,7 +36,7 @@ Nun müssen nacheinander folgende Befehle ausgeführt werden:
 Jetzt sollte mit dem Befehl ```kubectl get svc wordpress-service``` nachgeschaut werden, was die "External-IP" ist. Bis diese erscheint könnten ein paar Minuten vergehen.
 Sobald eine IP angezeigt wird, kann der Link http://"IhreExternalIP":30007 in einem Browserfenster eingegeben werden und es erscheint die Wordpress Seite.
 
-##Beschreibungen der Dateien
+## Beschreibungen der Dateien
 
 Die YAML-Datei "mysql-secret.yaml" definiert ein Kubernetes Secret mit dem Namen "mysql-secret", dass das MySQL-Root-Passwort "password" enthält.
 
@@ -50,7 +50,7 @@ Die YAML-Datei "wordpress-pv-pvc.yaml" definiert ein Persistent Volume mit dem N
 
 Die YAML-Datei "wordpress-deployment.yaml" definiert ein Kubernetes Deployment, das zwei Replikate des WordPress-Containers erstellt. Der WordPress-Container verwendet das Image "wordpress:5.8.3-php7.4-apache" und ist mit einem Persistent Volume Claim für die Datenbindung konfiguriert. Ein Service mit dem Namen "wordpress-service" wird erstellt und als Load Balancer mit dem Port 80 konfiguriert, um auf den WordPress-Container zuzugreifen.
 
-##Weitere Bilder:
+## Weitere Bilder:
 
 Cluster Status mit der URL: https://portal.azure.com/#@fhwn.ac.at/resource/subscriptions/f27379d5-931b-49b4-a4a8-a7490d71fc75/resourceGroups/grasnick23/providers/Microsoft.ContainerService/managedClusters/grasnick23/overview
 ![cluster status neu erstellt](https://github.com/RatteF/Lab4/assets/83348757/8fc500e0-c5c9-47bc-a649-b0e232be7a45)
