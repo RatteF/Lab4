@@ -8,12 +8,12 @@ Dann mit seinen Azure Daten anmelden.
 ```az aks get-credentials -g <IhrName> -n <IhrName>```
 Anschließend können die Files gedownloadet werden. Wenn dies getan wurde muss mit dem Befehl ```cd Ihr\Pfad``` in den Ordner mit den Dateien navigiert werden.
 Nun müssen nacheinander folgende Befehle ausgeführt werden:
-```kubectl apply -f mysql-secret.yaml
-kubectl apply -f mysql-pv-pvc.yaml
-kubectl apply -f mysql-statefulset.yaml
-kubectl apply -f mysql-service.yaml
-kubectl apply -f wordpress-pv-pvc.yaml
-kubectl apply -f wordpress-deployment.yaml```
+```kubectl apply -f mysql-secret.yaml```
+```kubectl apply -f mysql-pv-pvc.yaml```
+```kubectl apply -f mysql-statefulset.yaml```
+```kubectl apply -f mysql-service.yaml```
+```kubectl apply -f wordpress-pv-pvc.yaml```
+```kubectl apply -f wordpress-deployment.yaml```
 Jetzt sollte mit dem Befehl ```kubectl get svc wordpress-service``` nachgeschaut werden, was die "External-IP" ist. Bis diese erscheint könnten ein paar Minuten vergehen.
 Sobald eine IP angezeigt wird, kann der Link http://"IhreExternalIP":30007 in einem Browserfenster eingegeben werden und es erscheint die Wordpress Seite.
 
